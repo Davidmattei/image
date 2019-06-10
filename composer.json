@@ -7,8 +7,6 @@
     "symfony/options-resolver": "^4.3"
   },
   "autoload": {
-    "psr-4": {
-      "Image\\" : "src/"
-    }
+    "psr-4": {"Image\\": "src/Image"}
   }
 }
