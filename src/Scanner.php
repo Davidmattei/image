@@ -2,6 +2,8 @@
 
 namespace Image;
 
+use Symfony\Component\OptionsResolver\OptionsResolver;
+
 final class Scanner
 {
     /** @var array */
@@ -9,8 +11,16 @@ final class Scanner
 
     public function __construct(array $options)
     {
+        $this->options = $this->resolve($options);
+    }
 
+    private function resolveOptions(array $options): array
+    {
+        $resolver = new OptionsResolver();
+        $resolver
+            ->setRequired(['output_dir'])
+            ->setAllowedTypes('output_dir', 'string');
 
-        $this->options = $options;
+        return $resolver->resolve($options);
     }
 }
