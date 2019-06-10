@@ -1,5 +1,5 @@
 {
-  "name": "Davidmattei/image",
+  "name": "davidmattei/image",
   "description": "PHP Image Processing Library",
   "require": {
     "php": "^7.2",
