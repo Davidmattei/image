@@ -11,7 +11,7 @@ final class Scanner
 
     public function __construct(array $options)
     {
-        $this->options = $this->resolve($options);
+        $this->options = $this->resolveOptions($options);
     }
 
     private function resolveOptions(array $options): array
