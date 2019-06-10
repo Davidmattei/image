@@ -1,4 +1,13 @@
 {
   "name": "Davidmattei/image",
-  "description": "PHP Image Processing Library"
+  "description": "PHP Image Processing Library",
+  "require": {
+    "ext-imagick": "*",
+    "symfony/options-resolver": "^4.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Image\\" : "src/"
+    }
+  }
 }
