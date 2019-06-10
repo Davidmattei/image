@@ -2,6 +2,7 @@
   "name": "Davidmattei/image",
   "description": "PHP Image Processing Library",
   "require": {
+    "php": "^7.2",
     "ext-imagick": "*",
     "symfony/options-resolver": "^4.3"
   },
