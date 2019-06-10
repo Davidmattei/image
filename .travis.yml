@@ -9,3 +9,5 @@ matrix:
     include:
         - php: '7.2'
           env: SNIFF=1
+
+script:
